@@ -50,6 +50,7 @@ class Model {
             request(options, (error, response, body) => {
                 if (error) throw new Error(error);
                 console.log(body);
+                this._calling = body.calling;
                 resolve(body);
             });
         });

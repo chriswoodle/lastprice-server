@@ -41,6 +41,8 @@ app.get('/', (req, res) => {
 app.get('/hotels', (req, res) => {
     utils.getHotels().then(response => {
         res.send(response);
+    }).catch(()=> {
+        res.send('error');
     });
 });
 
@@ -56,13 +58,17 @@ app.put('/call', (req, res) => {
 
 app.get('/callStatus', (req, res) => {
     model.getCallStatus().then(result => {
-        res.send({ calling: result.calling, result: result });
+        res.send({ calling: model.calling, result: result });
+    }).catch(() => {
+        res.send('error');
     });
 });
 
 app.get('/callResult', (req, res) => {
     model.getCallStatus().then(result => {
         res.send({ result: result });
+    }).catch(() => {
+        res.send('error');
     });
 });
 
