@@ -35,7 +35,7 @@ export function getHotels() {
             try {
                 const parsed = JSON.parse(body);
                 if (parsed.message || !parsed.comparison) return resolve(cachedResponse);
-                return resolve(parsed);
+                return resolve(cachedResponse);
 
             } catch (error) {
                 return resolve(cachedResponse);
