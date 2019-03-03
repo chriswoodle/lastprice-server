@@ -47,76 +47,76 @@ export function getHotels() {
 const cachedResponse = {
     "comparison": [
         {
-            "vendor3-price": "US$223",
+            "vendor3-price": "223",
             "vendor2": "Agoda.com",
             "Hotel": "SponsoredHomewood Suites by Hilton Orlando - UCF Area",
             "vendor1": "Booking.com",
             "vendor3": "Hotelpower.com",
-            "vendor2-price": "US$177",
-            "Best-price": "US$\u00a0223US$\u00a0177Homewood",
-            "vendor1-price": "US$176"
+            "vendor2-price": "177",
+            "Best-price": "\u00a0223\u00a0177Homewood",
+            "vendor1-price": "176"
         },
         {
-            "vendor3-price": "US$214",
+            "vendor3-price": "214",
             "vendor2": "Expedia.com",
             "Hotel": "Comfort Suites",
             "vendor1": "ComfortSuites",
             "vendor3": "Hotelpower.com",
-            "vendor2-price": "US$179",
-            "Best-price": "US$\u00a0214US$\u00a0169Booking.com",
-            "vendor1-price": "US$179"
+            "vendor2-price": "179",
+            "Best-price": "\u00a0214\u00a0169Booking.com",
+            "vendor1-price": "179"
         },
         {
-            "vendor3-price": "US$230",
+            "vendor3-price": "230",
             "vendor2": "Agoda.com",
             "Hotel": "Hilton Garden Inn Orlando Airport",
             "vendor1": "Booking.com",
             "vendor3": "Hotelpower.com",
-            "vendor2-price": "US$171",
-            "Best-price": "US$\u00a0181GardenInn.com",
-            "vendor1-price": "US$171"
+            "vendor2-price": "171",
+            "Best-price": "\u00a0181GardenInn.com",
+            "vendor1-price": "171"
         },
         {
-            "vendor3-price": "US$316",
+            "vendor3-price": "316",
             "vendor2": "Cancelon",
             "Hotel": "Hyatt Regency Orlando",
             "vendor1": "Hyatt.com",
             "vendor3": "Otel.com",
-            "vendor2-price": "US$217",
-            "Best-price": "US$\u00a0255Booking.com",
-            "vendor1-price": "US$255"
+            "vendor2-price": "217",
+            "Best-price": "\u00a0255Booking.com",
+            "vendor1-price": "255"
         },
         {
-            "vendor3-price": "US$349",
+            "vendor3-price": "349",
             "vendor2": "Cancelon",
             "Hotel": "Rosen Centre Hotel",
             "vendor1": "Expedia.com",
             "vendor3": "Hotelpower.com",
-            "vendor2-price": "US$277",
-            "Best-price": "US$\u00a0280Booking.com",
-            "vendor1-price": "US$308",
+            "vendor2-price": "277",
+            "Best-price": "\u00a0280Booking.com",
+            "vendor1-price": "308",
             "Bulk-Discount": true
         },
         {
-            "vendor3-price": "US$177",
+            "vendor3-price": "177",
             "vendor2": "Agoda.com",
             "Hotel": "Marriott Orlando Downtown",
             "vendor1": "Marriott Hotels",
             "vendor3": "getaroom.com",
-            "vendor2-price": "US$176",
-            "Best-price": "US$\u00a0177US$\u00a0165Booking.com",
-            "vendor1-price": "US$165",
+            "vendor2-price": "176",
+            "Best-price": "\u00a0177\u00a0165Booking.com",
+            "vendor1-price": "165",
             "Bulk-Discount": true
         },
         {
-            "vendor3-price": "US$189",
+            "vendor3-price": "189",
             "vendor2": "Agoda.com",
             "Hotel": "SponsoredHome2 Suites by Hilton Orlando South Park",
             "vendor1": "Booking.com",
             "vendor3": "getaroom.com",
-            "vendor2-price": "US$172",
-            "Best-price": "US$\u00a0189US$\u00a0172Home2.com",
-            "vendor1-price": "US$172"
+            "vendor2-price": "172",
+            "Best-price": "\u00a0189\u00a0172Home2.com",
+            "vendor1-price": "172"
         }
     ]
 }

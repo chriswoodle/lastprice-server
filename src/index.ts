@@ -56,7 +56,7 @@ app.put('/call', (req, res) => {
 
 app.get('/callStatus', (req, res) => {
     model.getCallStatus().then(result => {
-        res.send({ calling: model.calling, result: result });
+        res.send({ calling: result.calling, result: result });
     });
 });
 

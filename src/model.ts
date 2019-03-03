@@ -21,7 +21,7 @@ class Model {
         return this._calling;
     }
     public startCall(query: any) {
-        return new Promise((resolve, reject) => {
+        return new Promise<any>((resolve, reject) => {
             log(`Starting call!`)
             this._calling = true;
             var options = {
@@ -32,14 +32,14 @@ class Model {
 
             request(options, (error, response, body) => {
                 if (error) throw new Error(error);
-                console.log(response);
-                resolve();
+                console.log(body);
+                resolve(body);
             });
         });
     }
 
     public getCallStatus() {
-        return new Promise((resolve, reject) => {
+        return new Promise<any>((resolve, reject) => {
             log(`Starting call!`)
             this._calling = true;
             var options = {
@@ -49,8 +49,8 @@ class Model {
 
             request(options, (error, response, body) => {
                 if (error) throw new Error(error);
-                console.log(response);
-                resolve();
+                console.log(body);
+                resolve(body);
             });
         });
     }
