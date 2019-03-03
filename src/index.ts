@@ -11,6 +11,7 @@ import * as bodyParser from 'body-parser';
 import * as morgan from 'morgan';
 import * as cors from 'cors';
 
+console.log(process.env);
 
 import * as utils from './utils';
 
@@ -46,7 +47,7 @@ app.get('/hotels', (req, res) => {
 app.put('/call', (req, res) => {
     log(req.body)
     if (!model.calling) {
-        model.startCall();
+        model.startCall(req.body);
         res.send('Starting call!');
     } else {
         res.send('Call in progress!');
@@ -54,9 +55,17 @@ app.put('/call', (req, res) => {
 });
 
 app.get('/callStatus', (req, res) => {
-    res.send({ calling: model.calling });
+    model.getCallStatus().then(result => {
+        res.send({ calling: model.calling, result: result });
+    });
 });
 
 app.get('/callResult', (req, res) => {
-    res.send({ result: model.result });
+    model.getCallStatus().then(result => {
+        res.send({ result: result });
+    });
 });
+
+setInterval(() => {
+    console.log('up...');
+}, 5000);

@@ -1,5 +1,7 @@
 import * as debug from 'debug';
 
+import * as request from 'request';
+
 const log = debug('app:model');
 
 class Model {
@@ -18,9 +20,39 @@ class Model {
         log(`Calling status: ${this._calling}`)
         return this._calling;
     }
-    public startCall() {
-        log(`Starting call!`)
-        this._calling = true;
+    public startCall(query: any) {
+        return new Promise((resolve, reject) => {
+            log(`Starting call!`)
+            this._calling = true;
+            var options = {
+                method: 'GET',
+                url: `${process.env.FLASK_API_HOST}/status`,
+                qs: query
+            };
+
+            request(options, (error, response, body) => {
+                if (error) throw new Error(error);
+                console.log(response);
+                resolve();
+            });
+        });
+    }
+
+    public getCallStatus() {
+        return new Promise((resolve, reject) => {
+            log(`Starting call!`)
+            this._calling = true;
+            var options = {
+                method: 'GET',
+                url: `${process.env.FLASK_API_HOST}/status`
+            };
+
+            request(options, (error, response, body) => {
+                if (error) throw new Error(error);
+                console.log(response);
+                resolve();
+            });
+        });
     }
 }
 
